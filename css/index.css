@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+        font-family: "Kanit", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+body{
+    margin: 0px;
+    /* background-color: #fff8e9; */
+    background-color: #1e1d1d;
+    min-height: 80vh;
+    color: #fff;
+}
+
+.head{
+    font-weight: 500;
+    /* font-size: 25px; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #333333; */
+    background-color: #dadada;
+    /* color: #fff; */
+    color: #010101;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 40px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 5px 15px rgba(141, 141, 141, 0.5);
+}
+
+.container{
+    margin: 20px 4rem 2rem 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px 0px 300px;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.content{
+    height: 100%;
+}
+
+.logo{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+
+.image{
+    border-radius: 10%;
+    object-fit: cover;
+    height: 300px;
+    box-shadow: 5px 5px 15px rgba(99, 99, 99, 0.5);
+    position: relative; /* เพื่อให้สามารถใช้ left/top ได้ */
+    animation: move-image 2s ease-out forwards;
+}
+@keyframes move-image {
+    0% {
+        transform: translateX(50px); /* เริ่มต้นจากตำแหน่งที่สูงขึ้น */
+        opacity: 0; /* เริ่มแบบโปร่งใส */
+    }
+    50% {
+        transform: translateX(0); /* เลื่อนมาที่ตำแหน่งปกติ */
+        opacity: 1; /* ทำให้โปร่งใสน้อยลง */
+    }
+    100% {
+        transform: translateX(0); /* คงตำแหน่งไว้ */
+    }
+}
+
+.nav-list{
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 28px;
+}
+
+.nav-item{
+    text-decoration: none;
+    margin: 0px 10px;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.nav-item:hover{
+    border-bottom: 5px solid #5c5c5c;
+    color: #5c5c5c;
+}
+
+.btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #d17701;
+    transition: all 0.5s ease;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.btn:hover{
+    background-color: #ecb469;
+    color: #000;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.nav-button{
+    text-decoration: none;
+    color: #fff;
+    background-color: #999999;
+    transition: all 0.5s ease;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.nav-button:hover{
+    background-color: #595959;
+    color: #fff;
+}
+
+#name{
+    color: #dd5500 ;
+    margin: 0; 
+    font-weight: 600;
+    text-shadow: 2px 2px 10px #d1770152;
+}
