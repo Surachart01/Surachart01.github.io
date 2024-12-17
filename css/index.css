@@ -34,10 +34,19 @@ body{
 .container{
     margin: 20px 4rem 2rem 30px;
     display: flex;
-    justify-content: space-between;
+    
     padding: 0px 100px 0px 300px;
     align-items: center;
     min-height: 80vh;
+}
+.descWork{
+    margin-left: 20px;
+    border-left: #d17701 solid 3px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.justify-content-between{
+    justify-content: space-between;
 }
 
 .content{
@@ -50,6 +59,15 @@ body{
     transition: all 0.5s ease;
 }
 
+.content-work{
+    height: 500px;
+}
+
+.description {
+    border-left: #d17701 solid 3px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
 
 .image{
     border-radius: 10%;
@@ -107,6 +125,10 @@ body{
 
 .d-flex{
     display: flex;
+}
+
+.justify-content.center{
+    justify-content: center;
 }
 
 .nav-button{
